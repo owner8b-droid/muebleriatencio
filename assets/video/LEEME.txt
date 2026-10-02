@@ -1,0 +1,15 @@
+VIDEOS — dejá los archivos aquí con estos nombres exactos.
+Mientras un archivo no exista, el sitio muestra la imagen de respaldo (poster).
+
+hero.mp4             Slideshow principal (slide 1). Horizontal 16:9, sin audio, loop.
+slideshow.mp4        Slideshow editorial "Cocinas" (slide 1). Horizontal 16:9, sin audio, loop.
+
+Opcionales:
+card-cocinas.mp4     Hover de la tarjeta "Cocinas" (vertical ~4:5, sin audio).
+card-mobiliario.mp4  Hover de la tarjeta "Mobiliario" (vertical ~4:5, sin audio).
+taller.mp4           Bloque de video "Así trabajamos en el taller" (con audio, se reproduce al hacer clic).
+
+Recomendado para web: H.264 (MP4), 1920x1080 máx., 8–15 s para los loops,
+idealmente menos de 6 MB cada uno. Con ffmpeg:
+ffmpeg -i original.mov -vf "scale=1920:-2" -c:v libx264 -crf 26 -preset slow -an -movflags +faststart hero.mp4
+(quitá "-an" en taller.mp4 si querés conservar el audio)
