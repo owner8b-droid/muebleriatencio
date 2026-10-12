@@ -2,10 +2,10 @@
    Mueblería Tencio — interacción
    ========================================================== */
 
-/* CONFIGURACIÓN — cambiá el número cuando esté confirmado.
+/* CONFIGURACIÓN
    Formato internacional sin "+" ni espacios: 506XXXXXXXX */
 const CONFIG = {
-  whatsapp: '50600000000',
+  whatsapp: '50688262064',
 };
 
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
